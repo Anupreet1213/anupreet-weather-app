@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap');
+@import "tailwindcss";
+
+.glass {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(11.2px);
+  -webkit-backdrop-filter: blur(11.2px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+body {
+  /* background-color: #ffffff;
+  background-image: linear-gradient(315deg, #ffffff 0%, #1e90ff 74%); */
+  letter-spacing: 1px;
+  font-family: "Mona Sans", sans-serif;
+  background-color: #447CC6;
+}
+
+
+.weather-clear {
+  background: linear-gradient(45deg, #ffcc00, #ff9900);
+  animation: sunnyAnimation 10s infinite;
+}
+
+.weather-rain {
+  background: linear-gradient(45deg, #1e1e1e, #424242);
+  animation: rainAnimation 10s infinite;
+}
+
+.weather-snow {
+  background: linear-gradient(45deg, #c9c9c9, #d9d9d9);
+  animation: snowAnimation 10s infinite;
+}
+
+.weather-clouds {
+  background: linear-gradient(45deg, #6d7c7f, #9b9e9f);
+  animation: cloudAnimation 10s infinite;
+}
+
+/* Animation for snow effect */
+@keyframes snowAnimation {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 100%;
+  }
+}
+
+/* Animation for rain effect */
+@keyframes rainAnimation {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 100%;
+  }
+}
+
+/* Animation for sunny effect */
+@keyframes sunnyAnimation {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+/* Animation for cloud effect */
+@keyframes cloudAnimation {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
